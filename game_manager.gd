@@ -1,6 +1,7 @@
 extends Node
 @onready var points_label = %PointsLabel
 @onready var finish = %Finish
+@onready var pause_menu: CanvasLayer = %PauseMenu
 
 var points = 0
 
@@ -9,11 +10,9 @@ func _ready():
 
 func add_point():
 	points += 1
-	print(points)
 	points_label.text = "Points : " + str(points)
 
 func toggle_pause():
-	var pause_menu = $"PauseMenu"
 	pause_menu.show()
 	get_tree().paused = true  # Pause the game
 

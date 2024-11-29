@@ -266,13 +266,14 @@ sources/0 = SubResource("TileSetAtlasSource_ld512")
 
 [node name="Node" type="Node"]
 
-[node name="PauseMenu" parent="." instance=ExtResource("1_kyb1w")]
-scale = Vector2(1.04235, 1.22944)
-transform = Transform2D(1.04235, 0, 0, 1.22944, 0, 0)
-
 [node name="GameManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_m4v8f")
+
+[node name="PauseMenu" parent="." instance=ExtResource("1_kyb1w")]
+unique_name_in_owner = true
+scale = Vector2(1.04235, 1.22944)
+transform = Transform2D(1.04235, 0, 0, 1.22944, 0, 0)
 
 [node name="SceneObjects" type="Node" parent="."]
 
@@ -401,7 +402,6 @@ position = Vector2(1965, 261)
 
 [node name="Collectible32" parent="SceneObjects/Collectibles group" instance=ExtResource("5_e4pfu")]
 position = Vector2(2282, 69)
-scale = Vector2(1.07426, 0.357847)
 
 [node name="Collectible33" parent="SceneObjects/Collectibles group" instance=ExtResource("5_e4pfu")]
 position = Vector2(2255, 291)
